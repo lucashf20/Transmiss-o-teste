@@ -14,16 +14,17 @@
             overflow: hidden;
         }
         .singularResponsive {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        .singularResponsive iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: transparent;
-        }
-        .singularResponsive iframe {
-            width: 1280px; /* Tamanho fixo */
-            height: 720px; /* Tamanho fixo */
             border: none;
             background-color: transparent;
         }
@@ -35,6 +36,7 @@
     </div>
 </body>
 </html>
+
 
 
 

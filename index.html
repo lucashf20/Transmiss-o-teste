@@ -2,33 +2,35 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singular Live Player</title>
     <style>
-        .singularResponsive {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
             overflow: hidden;
-            max-width: 100%;
-            background: #000;
         }
-        .singularResponsive iframe {
+        .singularResponsive {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%
+            width: 100%;
             height: 100%;
+            background: transparent;
+        }
+        .singularResponsive iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
         }
     </style>
 </head>
 <body>
     <div class="singularResponsive">
-        <iframe class="singularPlayer" width="1280" height="720" src="https://app.singular.live/output/29fbTUDjMq9Q4EeedYi5YQ/Output?aspect=16:9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen muted></iframe>
-        <script src="https://player.singular.live/playerMsgs.js"></script>
+        <iframe class="singularPlayer" src="https://app.singular.live/output/29fbTUDjMq9Q4EeedYi5YQ/Output?aspect=16:9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allowtransparency></iframe>
     </div>
-</body>
-</html>
-
-
-
+    <script src="https://player.singular
